@@ -30,7 +30,7 @@ long smallest_multiple(int n)
                 gcd = j;
         }
 
-        lcm = lcm * i / gcd;
+        lcm = lcm * (i / gcd);
     }
 
     return lcm;
