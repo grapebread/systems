@@ -22,6 +22,7 @@ int main(void)
 
     struct pokemon *pokeman = construct_rand_pokemon("some pokemon", rand() % 898 + 1);
     printf("%s's nat dex number is %d\n", pokeman->name, pokeman->id);
+    free(pokeman);
 }
 
 struct pokemon *construct_rand_pokemon(char *name, int id)
