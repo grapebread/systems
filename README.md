@@ -8,3 +8,5 @@
 - [Work 05: That Way Madness Lies](https://github.com/meowzebub/systems/tree/05_pointers)
 - [Work 06: The Old Switcheroo](https://github.com/meowzebub/systems/tree/06_switcheroo)
 - [Work 07: Arrays and Pointers and Functions, oh my!](https://github.com/meowzebub/systems/tree/07_funky)
+- [Work 08: If You Like It Then You Should've Put a String On Ot](https://github.com/meowzebub/systems/tree/08_string)
+- [Work 09: Construction Work](https://github.com/meowzebub/systems/tree/09_construction)
