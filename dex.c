@@ -30,10 +30,18 @@ struct dex *remove_node(struct dex *head, int id)
     struct dex *node_ahead = head->next;
     while (node != NULL && node_ahead != NULL)
     {
+        if (node->id == id)
+        {
+            head = node_ahead;
+            free(node);
+            break;
+        }
+
         if (node_ahead->id == id)
         {
             node->next = node_ahead->next;
             free_node(node_ahead);
+            break;
         }
 
         node = node->next;
@@ -51,11 +59,13 @@ void free_node(struct dex *node)
 
 struct dex *free_list(struct dex *head)
 {
-    if (head != NULL)
+    struct dex *tmp;
+    while (head)
     {
-        free_list(head);
+        struct dex *t = head;
+        head = head->next;
+        free(t);
     }
-    free_node(head);
 
     return head;
 }
