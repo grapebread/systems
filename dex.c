@@ -33,7 +33,7 @@ struct dex *remove_node(struct dex *head, int id)
         if (node_ahead->id == id)
         {
             node->next = node_ahead->next;
-            free(node_ahead);
+            free_node(node_ahead);
         }
 
         node = node->next;
@@ -55,6 +55,9 @@ struct dex *free_list(struct dex *head)
     {
         free_list(head);
     }
+    free_node(head);
+
+    return head;
 }
 
 void print_node(struct dex *node)
@@ -62,12 +65,16 @@ void print_node(struct dex *node)
     printf("{%d, %s}", node->id, node->name);
 }
 
-void print_List(struct dex *head)
+void print_list(struct dex *head)
 {
     printf("[ ");
     while (head)
     {
         print_node(head);
+        if (head->next)
+        {
+            printf(", ");
+        }
         head = head->next;
     }
     printf(" ]\n");

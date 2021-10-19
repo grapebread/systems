@@ -11,4 +11,4 @@ clean:
 	rm *.o *.exe
 
 run:
-	./list
+	@./list

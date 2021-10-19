@@ -13,4 +13,6 @@ int main(void)
     pokemon = insert_front(pokemon, 151, "Mew");
 
     print_list(pokemon);
+    remove_node(pokemon, 493);
+    print_list(pokemon);
 }
