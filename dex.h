@@ -1,5 +1,5 @@
-#define DEX_H
 #ifndef DEX_h
+#define DEX_H
 
 struct dex
 {
