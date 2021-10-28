@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <string.h>
-#include <errno.h>
 #include <fcntl.h>
 #include <io.h> // windows replacement for unistd.h (?)
 
@@ -8,22 +6,8 @@
 
 int main(void)
 {
-    errno = 0;
-
     int rand_file = open("/dev/urandom", O_RDONLY, 0);
-    int new_file = open("rand.txt", O_WRONLY, O_CREAT, 0777);
-
-    if (rand_file < 0 || errno != 0)
-    {
-        printf("unable to open /dev/urandom\n");
-        return -1;
-    }
-
-    if (rand_file < 0 || errno != 0)
-    {
-        printf("unable to open rand.txt\n");
-        return -1;
-    }
+    int new_file = open("rand.txt", O_WRONLY | O_CREAT, 0777);
 
     unsigned int rand_arr[SIZE];
 
@@ -40,12 +24,6 @@ int main(void)
     printf("Reading from file...\n");
     unsigned int new_arr[SIZE];
     int fd = open("rand.txt", O_RDONLY, 0);
-
-    if (new_file < 0 || errno != 0)
-    {
-        printf("unable to open rand.txt\n");
-        return -1;
-    }
 
     read(fd, new_arr, SIZE * sizeof(unsigned int));
 
