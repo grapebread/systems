@@ -11,4 +11,5 @@
 - [Work 08: If You Like It Then You Should've Put a String On It](https://github.com/meowzebub/systems/tree/08_string)
 - [Work 09: Construction Work](https://github.com/meowzebub/systems/tree/09_construction)
 - [Work 10: Enlist your C skillz](https://github.com/meowzebub/systems/tree/10_list)
-- [Work 11: Please follow the Dir[ections]](https://github.com/meowzebub/systems/tree/12_dirinfo)
+- [Work 11: /dev[ise a]/random plan](https://github.com/meowzebub/systems/tree/11_randfile)
+- [Work 12: Please follow the Dir[ections]](https://github.com/meowzebub/systems/tree/12_dirinfo)
