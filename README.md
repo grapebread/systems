@@ -13,3 +13,4 @@
 - [Work 10: Enlist your C skillz](https://github.com/meowzebub/systems/tree/10_list)
 - [Work 11: /dev[ise a]/random plan](https://github.com/meowzebub/systems/tree/11_randfile)
 - [Work 12: Please follow the Dir[ections]](https://github.com/meowzebub/systems/tree/12_dirinfo)
+- [Work 13: Instructional Reading](https://github.com/meowzebub/systems/tree/13_structrw)
