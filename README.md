@@ -14,3 +14,5 @@
 - [Work 11: /dev[ise a]/random plan](https://github.com/meowzebub/systems/tree/11_randfile)
 - [Work 12: Please follow the Dir[ections]](https://github.com/meowzebub/systems/tree/12_dirinfo)
 - [Work 13: Instructional Reading](https://github.com/meowzebub/systems/tree/13_structrw)
+- [Work 14: Light Up the Bat Signal](https://github.com/meowzebub/systems/tree/14_signal)
+- [Work 15: Get Argumentative](https://github.com/meowzebub/systems/tree/15_parse-args)
