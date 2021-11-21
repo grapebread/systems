@@ -16,3 +16,4 @@
 - [Work 13: Instructional Reading](https://github.com/meowzebub/systems/tree/13_structrw)
 - [Work 14: Light Up the Bat Signal](https://github.com/meowzebub/systems/tree/14_signal)
 - [Work 15: Get Argumentative](https://github.com/meowzebub/systems/tree/15_parse-args)
+- [Work 16: Forkin' Around](https://github.com/meowzebub/systems/tree/16_forkin)
