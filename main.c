@@ -13,8 +13,7 @@ void err();
 
 int main(void)
 {
-    int fd1[2];
-    int fd2[2];
+    int fd1[2], fd2[2];
     pipe(fd1);
     err();
     pipe(fd2);
@@ -30,7 +29,7 @@ int main(void)
             close(fd1[READ]);
             close(fd2[WRITE]);
             char buff[BUFFER_SIZE];
-            printf("Insert something ");
+            printf("Input: ");
             fgets(buff, BUFFER_SIZE, stdin);
 
             write(fd1[WRITE], buff, BUFFER_SIZE);
@@ -38,7 +37,7 @@ int main(void)
 
             read(fd2[READ], buff, BUFFER_SIZE);
             err();
-            printf("%s", buff);
+            printf("Output: %s\n", buff);
         }
         else
         {
