@@ -4,10 +4,12 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/socket.h>
 #include <string.h>
 #include <errno.h>
 #include <time.h>
 #include <ctype.h>
+#include <netdb.h>
 
 #ifndef NETWORKING_H
 #define NETWORKING_H
